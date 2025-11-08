@@ -1,0 +1,44 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+:root {
+  --page-bg-color: #ffe5d9;
+  --header-bg-color: #9d8189;
+
+  --title-color: #594b4f;
+  --subtitle-color: #9d8189;
+
+  --button-bg-color: #9d8189;
+  --button-active-bg-color: #594b4f;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.4;
+  background: var(--page-bg-color);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+/* container */
+.container {
+  padding-inline: 20px;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+}
+
+/* sekce */
+section {
+  padding-block: 50px;
+}
